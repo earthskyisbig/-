@@ -50,7 +50,7 @@ const App: React.FC = () => {
                         />
                     </div>
                     <div className="lg:col-span-3">
-                        <ResultsDisplay results={results} />
+                        <ResultsDisplay results={results} inputs={inputs} />
                     </div>
                 </main>
                 

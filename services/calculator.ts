@@ -18,6 +18,7 @@ export const calculateProfitability = (inputs: InputData): CalculationResult => 
         bidRate,
         salePrice: salePriceMillion,
         loanRatio = 80, // Default to 80% if not provided
+        loanPeriod = 6, // Default to 6 months if not provided
         interiorCosts: interiorCostsMillion = 0,
         evictionCosts: evictionCostsMillion = 0,
         overdueFees: overdueFeesMillion = 0,
@@ -52,7 +53,7 @@ export const calculateProfitability = (inputs: InputData): CalculationResult => 
         takeoverCosts;
     
     const requiredCapital = totalAcquisitionCost - loanableAmount;
-    const interest = (loanableAmount * 0.05) / 2; // 6개월치 이자 적용
+    const interest = (loanableAmount * 0.05 / 12) * loanPeriod;
     const prepaymentPenalty = loanableAmount * 0.005;
 
     const preTaxProfit = salePrice - totalAcquisitionCost - interest - prepaymentPenalty;

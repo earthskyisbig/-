@@ -14,6 +14,7 @@ const inputFields = [
     { name: 'bidRate', label: '낙찰가율 (%)', placeholder: '75', required: true, icon: 'fa-solid fa-gavel', type: 'number' },
     { name: 'salePrice', label: '매도가 (백만원)', placeholder: '300', required: true, icon: 'fa-solid fa-sack-dollar', type: 'number' },
     { name: 'loanRatio', label: '대출비율 (%)', placeholder: '80', icon: 'fa-solid fa-hand-holding-dollar', type: 'number' },
+    { name: 'loanPeriod', label: '대출기간 (개월)', placeholder: '6', icon: 'fa-solid fa-clock', type: 'number' },
     { name: 'interiorCosts', label: '인테리어비 (백만원)', placeholder: '0', icon: 'fa-solid fa-paint-roller', type: 'number' },
     { name: 'evictionCosts', label: '명도비 (백만원)', placeholder: '0', icon: 'fa-solid fa-person-walking-arrow-right', type: 'number' },
     { name: 'overdueFees', label: '체납 관리비 (백만원)', placeholder: '0', icon: 'fa-solid fa-file-invoice-dollar', type: 'number' },

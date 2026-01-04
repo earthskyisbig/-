@@ -3,6 +3,7 @@ export interface InputData {
     bidRate: number;
     salePrice: number;
     loanRatio?: number;
+    loanPeriod?: number;
     interiorCosts?: number;
     evictionCosts?: number;
     overdueFees?: number;
